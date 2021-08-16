@@ -1,0 +1,8 @@
+node {
+   stage(‘SCM checkout’){
+        git ‘https://github.com/saikumar30421/sample-maven-project.git’ 
+         }
+   stage(‘compile-package’){
+        sh ‘mvn clean package’
+        }
+}
